@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
+  <title>Frontend Mentor | Todo app</title>
+ 
+</head>
+<body>
+  
+
+
+<!-- Start App -->
+  <div id="app" class="darkmode">
+    <!-- Image header -->
+    <header></header>
+    <!-- Todo app title -->
+    <div id="todo-app">
+      <div class="title">
+        <h1>TODO</h1>
+        <button id="mode">
+          <img class="sun" src="./images/icon-sun.svg" alt="">
+          <img src="./images/icon-moon.svg" alt="" class="moon">
+        </button>
+      </div>
+
+      <!-- Todo app form -->
+      <div id="input-area">
+        <input type="text" placeholder="Create a new todo" id="todo-input">
+        <div>
+          <img src="./images/icon-check.svg" alt="">
+        </div>
+    </div>
+
+      <!-- Todo list area -->
+      <div class="todo-list">
+        <div class="content"></div>
+        <!-- Todo control -->
+        <nav>
+          <p class="progress">5 items left</p>
+          <div class="tabs">
+            <button id="show-all">All</button>
+            <button id="show-active">Active</button>
+            <button id="show-completed">Completed</button>
+          </div>
+          <button id="clear-completed">Clear Completed</button>
+        </nav>
+      </div>
+
+      <!-- DND info -->
+      <p>Drag and drop to reorder list</p>
+    </div>
+  </div>
+
+  <!-- End app -->
+
+
+  <!-- script below -->
+  <script src="./app.js"></script>
+</body>
+</html>
